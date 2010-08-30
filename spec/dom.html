@@ -1,0 +1,27 @@
+<html>
+	<head>
+		<link type="text/css" rel="stylesheet" href="./lib/jspec.css" />
+		<script src="http://ajax.googleapis.com/ajax/libs/jquery/1.4.2/jquery.min.js"></script>
+		<script src="./lib/jspec.js"></script>
+		<script src="./lib/jspec.xhr.js"></script>
+		<script src="lib/jspec.jquery.js"></script>
+		<script src="lib/jspec.timers.js"></script>
+<!--		<script src="../lib/yourlib.js"></script>-->
+		<script src="../lib/slide_deck.js"></script>
+		<script src="unit/spec.helper.js"></script>
+		<script>
+			window.onload = function() {
+				JSpec
+				//.exec('unit/spec.js')
+				.exec('unit/slide_deck.spec.js')
+				.run({ fixturePath: 'fixtures', failuresOnly: false })
+				.report()
+			}
+		</script>
+	</head>
+	<body class="jspec">
+		<div id="jspec-top"><h2 id="jspec-title">JSpec <em><script>document.write(JSpec.version)</script></em></h2></div>
+		<div id="jspec"></div>
+		<div id="jspec-bottom"></div>
+	</body>
+</html>
