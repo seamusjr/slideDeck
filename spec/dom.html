@@ -1,11 +1,10 @@
-<!doctype html>
 <html>
 	<head>
 		<link type="text/css" rel="stylesheet" href="./lib/jspec.css" />
-		<!--script src="http://ajax.googleapis.com/ajax/libs/jquery/1.4.2/jquery.min.js"></script-->
+		<!-- <script src="http://ajax.googleapis.com/ajax/libs/jquery/1.4.2/jquery.min.js"></script> -->
 		<script src="../lib/jquery.min.js"></script>
-		<script src="./lib/jspec.js"></script>
-		<script src="./lib/jspec.xhr.js"></script>
+		<script src="lib/jspec.js"></script>
+		<script src="lib/jspec.xhr.js"></script>
 		<script src="lib/jspec.jquery.js"></script>
 		<script src="lib/jspec.timers.js"></script>
 		<script src="../lib/slide_deck.js"></script>
@@ -16,8 +15,8 @@
 			window.onload = function() {
 				JSpec
 				//.exec('unit/spec.js')
-				.exec('unit/slide_deck.spec.js')
 				// .exec('unit/info_tip.spec.js')
+				.exec('unit/slide_deck.spec.js')
 				.run({ fixturePath: 'fixtures', failuresOnly: false })
 				.report()
 			}
