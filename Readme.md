@@ -1,13 +1,9 @@
 
-# YourLib
+slideDeck: A simple JavaScript slideshow using JQuery
 
-Description
-
-## License 
+Copyright © 2011 Seamus Roche, released under the MIT license.
 
 (The MIT License)
-
-Copyright (c) 2009 Your Name &lt;Your Email&gt;
 
 Permission is hereby granted, free of charge, to any person obtaining
 a copy of this software and associated documentation files (the
